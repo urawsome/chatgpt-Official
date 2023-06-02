@@ -1,4 +1,5 @@
 ---
+return Astro.redirect('https://aichut.com');
 import Layout from "~/layouts/Layout.astro"
 import Header from "~/components/Header.astro"
 import Chat from "~/components/Chat"
@@ -33,6 +34,7 @@ const resetContinuousDialogue =
     : defaultResetContinuousDialogue
 
 const question = Astro.url.searchParams.get("q")
+
 ---
 
 <Layout title="ChatGPT">
